@@ -1,0 +1,13 @@
+{
+  "name": "proyectojavascript",
+  "version": "1.0.0",
+  "description": "paquete de node para compilar scss a css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Matias Perrone",
+  "license": "ISC"
+}
