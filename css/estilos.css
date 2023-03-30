@@ -1,2 +1,22 @@
-.body {
-  background-color: grey; }
+.carrito {
+  width: 100px; }
+
+.logo {
+  width: 150px; }
+
+.navbar {
+  height: 100px;
+  flex-wrap: nowrap; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  font-family: roboto;
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style: none; }
