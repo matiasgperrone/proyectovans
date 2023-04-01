@@ -1,3 +1,14 @@
+.footer {
+  background-color: black;
+  height: 100px; }
+  .footer__texto {
+    color: white;
+    text-align: center; }
+  .footer__img {
+    display: flex;
+    justify-content: center;
+    gap: 15px; }
+
 .carrito {
   width: 100px; }
 
@@ -12,6 +23,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  background-color: #f1f2ed; }
 
 a {
   font-family: roboto;

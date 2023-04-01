@@ -1,0 +1,13 @@
+.footer{
+    background-color: black;
+    height: 100px;
+    &__texto{
+        color: white;
+        text-align: center;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
