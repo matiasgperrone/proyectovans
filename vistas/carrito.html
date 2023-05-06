@@ -39,15 +39,84 @@
                 
             <li>
                 <a href="#">
-                    <img src="../img/vans-carrito2.png" alt="Carrito" class="carrito p-4">
+                  <i class="bi bi-cart-fill heading"></i><span class="numero-carrito">0</span>
                 </a>
             </li>
         </ul>
       </nav>
 </header>
 <body>
-    
+    <section class="container py-5 mt-4">
+        <p class="carrito-vacio">Tu carrito está vacío :C</p>
+        <div class="row allign-items-center">
+            <div class="col-md-3 p-3 text-start carrito-menu">
+                <button class="botones-carrito"><i class="bi bi-arrow-return-left"></i>Seguir comprando</button>
+            </div>
+            <div class="col-md-9 p-3 mt-4 d-flex justify-content-around">  
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-</html>
+
+                <div class="carrito-productos disabled">
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="../img/v-zapatillas2.jpg" alt="">
+                        <div class="carrito-producto-nombre">
+                            <small>Producto</small>
+                            <h3>Zapatillas U OLD SKOOL</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$26.600</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$26.600</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrito-opciones disabled">
+                <div class="carrito-opciones-izq">
+                    <button class="carrito-opciones-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="carrito-opciones-der">
+                    <div class="carrito-opciones-total">
+                        <p>Total:</p>
+                        <p id="total">$26.600</p>
+                    </div>
+                    <button class="carrito-opciones-comprar">Comprar</button>
+                </div>   
+            </div>
+        </div>
+    
+    </section>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+    
+    <footer class="footer">
+    <h4 class="footer__texto">FOLLOW VANS</h4>
+    
+    <div class="footer__img">
+        <a href="https://www.facebook.com/vans.arg/">
+            <img src="../img/vans-fb.png" alt="logo-fb">
+        </a>
+        <a href="https://twitter.com/vansargentina">
+            <img src="../img/vans-tw.png" alt="logo-tw">
+        </a>
+        <a href="https://www.youtube.com/user/VansShoes66/videos">
+            <img src="../img/vans-yt.png" alt="logo-yt">
+        </a>
+        <a href="https://www.instagram.com/vansargentina/">
+            <img src="../img/vans-ig.jpg" alt="logo-ig">
+        </a>  
+        <a href="https://www.pinterest.es/vans/">
+            <img src="../img/vans-pinterest.png" alt="logo-pinterest">
+        </a>
+    </div>
+    </footer>
+    </html>

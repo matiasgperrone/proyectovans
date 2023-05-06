@@ -1,0 +1,26 @@
+.aside{
+    position: sticky;
+    top: 0;
+    height: 100 px;
+}
+
+.botones-laterales{
+    border: 0;
+    background-color: transparent;
+}
+
+.botones-laterales:hover{
+    color: red;
+}
+
+.botones-comprar{
+    border: 0;
+    color: red;
+    transition: background-color .5s;
+}
+
+.botones-comprar:hover{
+    color: black;
+    background-color: red;
+}
+

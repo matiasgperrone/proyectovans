@@ -1,0 +1,121 @@
+
+.numero-carrito{
+    padding: .25rem;
+    background-color: yellow;
+    border-radius: .25rem;
+    margin: .25rem;
+}
+
+
+.carrito-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrito-vacio{
+    text-align: center;
+}
+
+.carrito-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+.carrito-producto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto-imagen{
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto small {
+    font-size: .75rem;
+}
+
+.botones-carrito{
+    display: flex;
+    gap: .5rem;
+    background-color: white;
+    border: 0;
+    padding: .5rem;
+    border-radius: 1rem;
+    transition: background-color .5s;
+    margin: .5rem;
+}
+
+.botones-carrito:hover{
+    background-color: black;
+    color: white;
+}
+
+.carrito-producto-eliminar{
+    border: 0;
+    background-color: transparent;
+    color: red;
+}
+
+.carrito-opciones{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carrito-opciones-der{
+    display: flex;
+}
+
+.carrito-opciones-total{
+    display: flex;
+    background-color: white;
+    border: 0;
+    padding: .5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    text-transform: uppercase;
+}
+
+.carrito-opciones-vaciar{
+    background-color: white;
+    border: 0;
+    padding: .5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    transition: background-color .5s;
+}
+
+.carrito-opciones-vaciar:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.carrito-opciones-comprar{
+    background-color: red;
+    border: 0;
+    padding: .5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-transform: uppercase;
+    transition: background-color .5s;
+}
+
+.carrito-opciones-comprar:hover{
+    background-color: yellow;
+}
+
+.disabled {
+    display: none;
+}

@@ -1,3 +1,8 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
 .carrito{
 width: 100px;
@@ -9,5 +14,5 @@ width: 100px;
 
 .navbar{
     height: 100px;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;  
     }
