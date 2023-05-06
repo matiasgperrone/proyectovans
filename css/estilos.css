@@ -29,6 +29,15 @@
   top: 0;
   height: 100 px; }
 
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.ul-menu {
+  padding: 0; }
+
 .botones-laterales {
   border: 0;
   background-color: transparent; }
