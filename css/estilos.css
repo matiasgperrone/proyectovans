@@ -24,16 +24,22 @@
   height: 100px;
   flex-wrap: nowrap; }
 
-.aside {
-  position: sticky;
-  top: 0;
-  height: 100 px; }
+.contenedor-universal {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 16px; }
+
+.contenedor-productos-class {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
 
 .menu-lateral {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start; }
+  padding: 1rem 3rem;
+  height: max-content;
+  position: sticky;
+  top: 10rem; }
 
 .ul-menu {
   padding: 0; }
@@ -53,6 +59,10 @@
 .botones-comprar:hover {
   color: black;
   background-color: red; }
+
+.carta-producto {
+  margin: 1rem;
+  width: 18rem; }
 
 .numero-carrito {
   padding: .25rem;
