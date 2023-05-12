@@ -44,19 +44,19 @@
 .ul-menu {
   padding: 0; }
 
-.botones-laterales {
+.botones-categorias {
   border: 0;
   background-color: transparent; }
 
-.botones-laterales:hover {
+.botones-categorias:hover {
   color: red; }
 
-.botones-comprar {
+.botones-agregar {
   border: 0;
   color: red;
   transition: background-color .5s; }
 
-.botones-comprar:hover {
+.botones-agregar:hover {
   color: black;
   background-color: red; }
 
@@ -161,6 +161,9 @@
 
 .carrito-opciones-comprar:hover {
   background-color: yellow; }
+
+.carrito-comprado {
+  text-align: center; }
 
 .disabled {
   display: none; }
