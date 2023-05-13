@@ -114,6 +114,7 @@ function vaciarCarrito() {
 	productosEnCarrito.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 	cargarProductosCarrito();
+    actualizarNuevoNumeroCarrito();
 
 }
 
@@ -138,5 +139,6 @@ function comprarCarrito() {
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoOpciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
+    actualizarNuevoNumeroCarrito();
 }
 
