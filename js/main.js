@@ -1,8 +1,8 @@
 const productos = [
 	{
 		id: "zapatillas01",
-		titulo: "Zapatillas U OLD SKOOL Grey",
-		imagen: "./img/zapatillas/zapatillas01.jpg",
+		titulo: "U OLD SKOOL Grey",
+		imagen: "../img/zapatillas/zapatillas01.jpg",
 		categoria: {
 			nombre: "Zapatillas",
 			id: "zapatillas",
@@ -11,8 +11,8 @@ const productos = [
 	},
 	{
 		id: "zapatillas02",
-		titulo: "Zapatillas U OLD SKOOL White",
-		imagen: "./img/zapatillas/zapatillas02.jpg",
+		titulo: "U OLD SKOOL White",
+		imagen: "../img/zapatillas/zapatillas02.jpg",
 		categoria: {
 			nombre: "Zapatillas",
 			id: "zapatillas",
@@ -21,8 +21,8 @@ const productos = [
 	},
     {
 		id: "zapatillas03",
-		titulo: "Zapatillas U ERA Black",
-		imagen: "./img/zapatillas/zapatillas03.jpg",
+		titulo: "U ERA Black",
+		imagen: "../img/zapatillas/zapatillas03.jpg",
 		categoria: {
 			nombre: "Zapatillas",
 			id: "zapatillas",
@@ -31,8 +31,8 @@ const productos = [
 	},
     {
 		id: "zapatillas04",
-		titulo: "Zapatillas U AUTHENTIC Pink",
-		imagen: "./img/zapatillas/zapatillas04.jpg",
+		titulo: "U AUTHENTIC Pink",
+		imagen: "../img/zapatillas/zapatillas04.jpg",
 		categoria: {
 			nombre: "Zapatillas",
 			id: "zapatillas",
@@ -41,8 +41,8 @@ const productos = [
 	},
     {
 		id: "zapatillas05",
-		titulo: "Zapatillas U AUTHENTIC Orange",
-		imagen: "./img/zapatillas/zapatillas05.jpg",
+		titulo: "U AUTHENTIC Orange",
+		imagen: "../img/zapatillas/zapatillas05.jpg",
 		categoria: {
 			nombre: "Zapatillas",
 			id: "zapatillas",
@@ -51,8 +51,8 @@ const productos = [
 	},
     {
 		id: "zapatillas06",
-		titulo: "Zapatillas U OLD SKOOL Yellow",
-		imagen: "./img/zapatillas/zapatillas06.jpg",
+		titulo: "U OLD SKOOL Yellow",
+		imagen: "../img/zapatillas/zapatillas06.jpg",
 		categoria: {
 			nombre: "Zapatillas",
 			id: "zapatillas",
@@ -61,8 +61,8 @@ const productos = [
 	},
     {
 		id: "remera01",
-		titulo: "Remera Vans Classic Black",
-		imagen: "./img/Remeras/remera01.jpg",
+		titulo: "Vans Classic Black",
+		imagen: "../img/Remeras/remera01.jpg",
 		categoria: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -71,8 +71,8 @@ const productos = [
 	},
     {
 		id: "remera02",
-		titulo: "Remera Full Patch Black",
-		imagen: "./img/Remeras/remera02.jpg",
+		titulo: "Full Patch Black",
+		imagen: "../img/Remeras/remera02.jpg",
 		categoria: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -81,8 +81,8 @@ const productos = [
 	},
     {
 		id: "remera03",
-		titulo: "Remera Core Basic Tee Grey",
-		imagen: "./img/Remeras/remera03.jpg",
+		titulo: "Core Basic Tee Grey",
+		imagen: "../img/Remeras/remera03.jpg",
 		categoria: {
 			nombre: "Remeras",
 			id: "remeras",
@@ -91,8 +91,8 @@ const productos = [
 	},
     {
 		id: "bermuda01",
-		titulo: "Short Vans Classic Black",
-		imagen: "./img/bermudas/bermuda01.jpg",
+		titulo: "Vans Classic Black",
+		imagen: "../img/bermudas/bermuda01.jpg",
 		categoria: {
 			nombre: "Bermudas",
 			id: "bermudas",
@@ -101,8 +101,8 @@ const productos = [
 	},
     {
 		id: "bermuda02",
-		titulo: "Short Vans Classic Grey",
-		imagen: "./img/bermudas/bermuda02.jpg",
+		titulo: "Vans Classic Grey",
+		imagen: "../img/bermudas/bermuda02.jpg",
 		categoria: {
 			nombre: "Bermudas",
 			id: "bermudas",
@@ -111,8 +111,8 @@ const productos = [
 	},
     {
 		id: "buzo01",
-		titulo: "Buzo OTW Po II Black",
-		imagen: "./img/buzos/buzo01.jpg",
+		titulo: "OTW Po II Black",
+		imagen: "../img/buzos/buzo01.jpg",
 		categoria: {
 			nombre: "Buzos",
 			id: "buzos",
@@ -121,8 +121,8 @@ const productos = [
 	},
     {
 		id: "buzo02",
-		titulo: "Buzo Classic Po II Hoodie French Terry Grey",
-		imagen: "./img/buzos/buzo02.jpg",
+		titulo: "Hoodie French Terry Grey",
+		imagen: "../img/buzos/buzo02.jpg",
 		categoria: {
 			nombre: "Buzos",
 			id: "buzos",
@@ -131,8 +131,8 @@ const productos = [
 	},
     {
 		id: "buzo03",
-		titulo: "Buzo Classic V II Hoodie French Terry Pink",
-		imagen: "./img/buzos/buzo03.jpg",
+		titulo: "Hoodie French Terry Pink",
+		imagen: "../img/buzos/buzo03.jpg",
 		categoria: {
 			nombre: "Buzos",
 			id: "buzos",
@@ -142,7 +142,7 @@ const productos = [
     {
 		id: "overalls",
 		titulo: "Overalls",
-		imagen: "./img/overalls/overalls.jpg",
+		imagen: "../img/overalls/overalls.jpg",
 		categoria: {
 			nombre: "Overalls",
 			id: "overalls",
@@ -211,7 +211,16 @@ function actualizarBotonesAgregar() {
 		});
 }
 
-const productosEnCarrito = [];
+let productosEnCarrito;
+const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+
+if(productosEnCarritoLS){
+	productosEnCarrito = productosEnCarritoLS
+} else {
+	productosEnCarrito = [];
+}
+
+
 
 function agregarAlCarrito(e) {
 

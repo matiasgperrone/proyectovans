@@ -6,14 +6,15 @@ const contenedorCarritoOpciones = document.querySelector("#carrito-opciones");
 const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
 
 if (productosEnCarrito) {
+
     contenedorCarritoVacio.classList.add("disabled");
     contenedorCarritoProductos.classList.remove("disabled");
     contenedorCarritoOpciones.classList.remove("disabled");
     contenedorCarritoComprado.classList.add("disabled");
 
-    productosEnCarrito.forEach(producto => {
+    contenedorCarritoProductos.innerHTML = "";
 
-        contenedorCarritoProductos.innerHTML = "";
+    productosEnCarrito.forEach(producto => {
 
         const div = document.createElement("div");
         div.classList.add("carrito-producto");
@@ -39,9 +40,6 @@ if (productosEnCarrito) {
         `;
 
         contenedorCarritoProductos.append(div);
-    
-
-
-}) else{
+})} else{
 
 }
