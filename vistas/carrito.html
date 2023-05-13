@@ -39,7 +39,7 @@
                 
             <li>
                 <a href="#">
-                  <i class="bi bi-cart-fill heading"></i><span class="numero-carrito">0</span>
+                  <i class="bi bi-cart-fill heading"></i><span id="numero-carrito" class="numero-carrito">0</span>
                 </a>
             </li>
         </ul>
@@ -53,45 +53,25 @@
     <section class="contenedor-universal">
 
         <div class="carrito-menu">
-                <button class="botones-carrito"><i class="bi bi-arrow-return-left"></i>Seguir comprando</button>
+                <a href="../index.html"><button id="carrito-seguir-comprando" class="botones-carrito"><i class="bi bi-arrow-return-left"></i>Seguir comprando</button></a>
         </div>
 
         <div id="carrito-productos" class="carrito-productos disabled">
-                
-            <div id="carrito-producto" class="carrito-producto">
-                <img class="carrito-producto-imagen" src="../img/Zapatillas/zapatillas02.jpg" alt="">
-                <div class="carrito-producto-nombre">
-                    <small>Producto</small>
-                    <h3>Zapatillas U OLD SKOOL</h3>
-                </div>
-                <div class="carrito-producto-cantidad">
-                    <small>Cantidad</small>
-                    <p>1</p>
-                </div>
-                <div class="carrito-producto-precio">
-                    <small>Precio</small>
-                    <p>$26.600</p>
-                </div>
-                <div class="carrito-producto-subtotal">
-                    <small>Subtotal</small>
-                    <p>$26.600</p>
-                </div>
-                <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-            </div>
+             <!-- COMPLETADO MEDIANTE JS -->
         </div>
 
     </section>
         
             <div id="carrito-opciones" class="carrito-opciones disabled">
                 <div class="carrito-opciones-izq">
-                    <button class="carrito-opciones-vaciar">Vaciar carrito</button>
+                    <button id="carrito-opciones-vaciar" class="carrito-opciones-vaciar">Vaciar carrito</button>
                 </div>
                 <div class="carrito-opciones-der">
                     <div class="carrito-opciones-total">
                         <p>Total:</p>
-                        <p id="total">$26.600</p>
+                        <p id="total"> $26.600</p>
                     </div>
-                    <button class="carrito-opciones-comprar">Comprar</button>
+                    <button id="carrito-opciones-comprar" class="carrito-opciones-comprar">Comprar</button>
                 </div>   
             </div>
         

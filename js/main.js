@@ -1,3 +1,6 @@
+//*** JAVASCRIPT DEL INDEX ***/
+
+// GENERACION DE ARRAY DE PRODUCTOS //
 const productos = [
 	{
 		id: "zapatillas01",
@@ -151,13 +154,15 @@ const productos = [
 	},
 ];
 
+// DECLARANDO VARIABLES Y CONSTANTES PARA ALOJAR LA INFORMACIÓN QUE TRAEMOS DEL DOM MEDIANTE ID O CLASS
+
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".botones-categorias");
 let botonesAgregar = document.querySelectorAll(".botones-agregar");
 const numeroCarrito = document.querySelector("#numero-carrito");
 
 
-
+// FUNCION PARA CARGA DE PRODUCTOS EN EL INDEX
 
 function cargarProductos(productosElegidos) {
 
@@ -181,12 +186,11 @@ function cargarProductos(productosElegidos) {
 					contenedorProductos.append(div);
 })
 					actualizarBotonesAgregar();
-					console.log(botonesAgregar);
 };
 
 cargarProductos(productos);
 
-
+// FILTROS PARA MOSTRAR CIERTOS PRODUCTOS DEPENDIENDO CATEGORIA
 
 botonesCategorias.forEach(boton => {
 	boton.addEventListener("click", (e) => {
@@ -203,6 +207,8 @@ botonesCategorias.forEach(boton => {
 
 })
 
+// AGREGAR LOS PRODUCTOS AL CARRITO
+
 function actualizarBotonesAgregar() {
 	botonesAgregar = document.querySelectorAll(".botones-agregar");
 	
@@ -211,11 +217,15 @@ function actualizarBotonesAgregar() {
 		});
 }
 
+// ACTUALIZANDO NUMERO DE PRODUCTOS EN CARRITO
+
 let productosEnCarrito;
-const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+
 
 if(productosEnCarritoLS){
-	productosEnCarrito = productosEnCarritoLS
+	productosEnCarrito = JSON.parse(productosEnCarritoLS);
+	actualizarNumeroCarrito();
 } else {
 	productosEnCarrito = [];
 }
@@ -240,7 +250,10 @@ function agregarAlCarrito(e) {
 	localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
+// ACTUALIZAR EL SPAN DEL CARRITO
+
 function actualizarNumeroCarrito() {
 	let nuevoNumeroCarrito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
 	numeroCarrito.innerText = nuevoNumeroCarrito;
+	localStorage.setItem("nuevo-numero-carrito", JSON.stringify(nuevoNumeroCarrito));
 }
