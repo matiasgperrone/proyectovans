@@ -1,0 +1,49 @@
+.img-w100{
+    width: 100%;
+}
+
+.body-black{
+    background-color: black;
+}
+
+.contenedores-deportes{
+    margin: 0rem 4rem;
+}
+
+.contenedor-sk8-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 4rem 0rem;
+}
+
+
+.texto-sk8{
+    color: white;
+    text-align: center;
+}
+
+.skateboarding-gif{
+       display: flex;
+       justify-content: right;
+}
+
+
+
+.contenedor-sk8-2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.separador{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+}
+
+
