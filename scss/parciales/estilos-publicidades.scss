@@ -1,0 +1,151 @@
+// ESTILOS GENERALES DE HTML PUBLICIDADES
+
+.img-w100{
+    width: 100%;
+}
+
+.body-black{
+    background-color: black;
+}
+
+.texto-basico{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedores-deportes{
+    margin: 0rem 4rem;
+}
+
+
+.contenedor-imagen-larga{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+// HTML SKATE
+
+.contenedor-sk8-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 4rem 0rem;
+}
+
+.contenedor-sk8-3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 4rem 0rem;
+}
+
+.texto-sk8{
+    color: white;
+    text-align: center;
+}
+
+.skateboarding-gif{
+       display: flex;
+       justify-content: right;
+}
+
+
+// HTML SURF
+
+.contenedor-dos-gif{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.surf-gif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.contenedor-video-surf{
+    padding: 3rem 0rem;
+}
+
+
+.contenedor-imagenes-surf{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.imagenes-surf{
+    width: 15rem;
+}
+
+// BMX
+
+// Carousel de videos
+
+.carousel-videos{
+    margin: 4rem 0;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    top: 15rem;
+    bottom: 15rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: black;
+}
+
+// Texto BMX
+
+.titulo-equipo-bmx{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: overline;
+}
+
+
+// li de BMX 
+
+.equipo-bmx-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.ul-bmx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombres-equipo{
+    width: 15rem;
+}
+
+.li-bmx-principal{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+
+.li-bmx-secundario{
+    color: white;
+}
+
