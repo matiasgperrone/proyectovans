@@ -1,3 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #e5e5e5; }
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  margin: 0; }
+
+p {
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+ul {
+  list-style: none; }
+
 .footer {
   background-color: black;
   height: 100px; }
@@ -29,6 +51,12 @@
   grid-template-columns: 300px 1fr;
   gap: 16px; }
 
+.botones-menu-principal {
+  transition: transform .5s; }
+
+.botones-menu-principal:hover {
+  transform: scale(1.1); }
+
 .contenedor-productos-class {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -42,11 +70,12 @@
   top: 10rem; }
 
 .ul-menu {
-  padding: 0; }
+  padding: 1rem; }
 
 .botones-categorias {
   border: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .botones-categorias:hover {
   color: red; }
@@ -54,7 +83,10 @@
 .botones-agregar {
   border: 0;
   color: red;
-  transition: background-color .5s; }
+  transition: background-color .5s;
+  border-bottom-right-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  border-bottom-left-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  font-weight: bold; }
 
 .botones-agregar:hover {
   color: black;
@@ -63,6 +95,13 @@
 .carta-producto {
   margin: 1rem;
   width: 18rem; }
+
+.img-producto {
+  transition: transform .2s; }
+
+.img-producto:hover {
+  transform: scale(1.05);
+  border: 1px solid black; }
 
 .numero-carrito {
   padding: .25rem;
@@ -167,6 +206,14 @@
 
 .disabled {
   display: none; }
+
+.swal2-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px !important; }
+
+.swal2-html-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px !important; }
 
 .img-w100 {
   width: 100%; }
@@ -274,24 +321,3 @@
 
 .li-bmx-secundario {
   color: white; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: roboto; }
-
-body {
-  background-color: #e5e5e5; }
-
-a {
-  font-family: roboto;
-  text-decoration: none;
-  color: black;
-  margin: 0; }
-
-p {
-  margin-bottom: 0; }
-
-ul {
-  list-style: none; }

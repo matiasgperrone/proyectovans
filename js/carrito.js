@@ -173,14 +173,33 @@ function calcularTotal() {
 botonComprar.addEventListener("click", comprarCarrito);
 
 function comprarCarrito() {
+    Swal.fire({
+        title: '¿Deseas finalizar tu compra?',
+        icon: 'question',
+        html: 'No podrás seguir agregando productos al carrito',
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonColor: 'red',
+        confirmButtonText:'Si',
+        cancelButtonText:'No',
+      }).then((result) => {
+        if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 
-	productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoOpciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
-    actualizarNuevoNumeroCarrito();
+            contenedorCarritoVacio.classList.add("disabled");
+            contenedorCarritoProductos.classList.add("disabled");
+            contenedorCarritoOpciones.classList.add("disabled");
+            contenedorCarritoComprado.classList.remove("disabled");
+            actualizarNuevoNumeroCarrito();
+        
+            Swal.fire({
+                icon: 'success',
+                title: 'Tu compra fue realizada con éxito',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }         
+    })
 }
 

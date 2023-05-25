@@ -11,36 +11,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VANS</title>
+    <title>Vans | Shop</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <header class="header">
     <nav>
         <ul class="navbar border-bottom border-dark border-5 justify-content-evenly" style="background-color: white">
-            <li>
+            <li class="botones-menu-principal">
                 <a href="#">
                     <img src="./img/Vans-logo1.png" alt="VANS LOGO" class="logo">
                 </a>
             </li>
 
-            <li>
+            <li class="botones-menu-principal">
                 <a href="#">SHOP</a>
             </li>
 
-            <li>
+            <li class="botones-menu-principal">
                 <a href="./vistas/skateboarding.html">SKATEBOARDING</a>
             </li>
 
-            <li>
+            <li class="botones-menu-principal">
                 <a href="./vistas/surf.html">SURF</a>
             </li>
 
-            <li>
+            <li class="botones-menu-principal">
                 <a href="./vistas/bmx.html">BMX</a>
             </li>
                 
-            <li>
+            <li class="botones-menu-principal">
                 <a href="./vistas/carrito.html">
                   <i class="bi bi-cart-fill heading"></i><span id="numero-carrito" class="numero-carrito">0</span>
                 </a>
@@ -53,10 +53,8 @@
 
 <body>
   <section class="contenedor-universal">
-      <div class="menu-lateral" data-aos="zoom-in" data-aos-duration="1000">
-        <button id="todos" class="botones-categorias">TODOS LOS PRODUCTOS</button>
-        <h3>CATEGORIAS</h3>
-        <h4>PRENDAS</h4>
+      <div class="menu-lateral">
+        <button id="todos" class="botones-categorias font-weight-bold">TODOS LOS PRODUCTOS</button>
         <ul class="ul-menu">
             <li><button id="zapatillas"  class="botones-categorias">Zapatillas</button></li>
             <li><button id="remeras"  class="botones-categorias">Remeras</button></li>
@@ -66,19 +64,20 @@
         </ul>
       </div>
       
-      <div id="contenedor-productos" class="contenedor-productos-class" data-aos="zoom-in" data-aos-dellay="500" data-aos-duration="1000">
+      <div id="contenedor-productos" class="contenedor-productos-class" data-aos="fade-right">
         <!-- COMPLETADO MEDIANTE JS -->
       </div> 
 
   </section>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({startEvent: "load"});
     </script>
   </body>
 

@@ -4,6 +4,14 @@
     gap: 16px;
 }
 
+.botones-menu-principal{
+    transition: transform .5s;
+}
+
+.botones-menu-principal:hover{
+    transform: scale(1.1);
+}
+
 .contenedor-productos-class{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -19,12 +27,13 @@
     }
 
 .ul-menu{
-    padding: 0;
+    padding: 1rem;
 }
 
 .botones-categorias{
     border: 0;
     background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .botones-categorias:hover{
@@ -35,6 +44,9 @@
     border: 0;
     color: red;
     transition: background-color .5s;
+    border-bottom-right-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    border-bottom-left-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    font-weight: bold;
 }
 
 .botones-agregar:hover{
@@ -45,4 +57,14 @@
 .carta-producto{
     margin: 1rem;
     width: 18rem;
+}
+
+.img-producto{
+    transition: transform .2s;
+}
+
+
+.img-producto:hover{
+    transform: scale(1.05); 
+    border: 1px solid black;
 }

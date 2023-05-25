@@ -29,6 +29,7 @@ function cargarProductos(productosElegidos) {
 	const div = document.createElement("div");
 	div.classList.add("card");
 	div.classList.add("carta-producto");
+	div.classList.add("img-producto");
 	div.innerHTML = 
 					`<img src="${producto.imagen}" class="card-img-top" alt="${producto.titulo}">
 					<div class="card-body">
@@ -42,8 +43,10 @@ function cargarProductos(productosElegidos) {
 						`;
 					contenedorProductos.append(div);
 })
+
 					actualizarBotonesAgregar();
 };
+
 
 
 
@@ -136,7 +139,5 @@ function actualizarNumeroCarrito() {
 }
 
 
-
-// APLICANDO AOS A LOS DIV QUE SE CREAN MEDIANTE JS EN INDEX
 
 
