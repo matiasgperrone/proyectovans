@@ -4,6 +4,15 @@
     z-index: 10;
 }
 
+.botones-menu-principal{
+    transition: transform .5s;
+}
+
+.botones-menu-principal:hover{
+    transform: scale(1.1);
+}
+
+
 .carrito{
 width: 100px;
 }

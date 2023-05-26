@@ -54,15 +54,37 @@
 <body>
   <section class="contenedor-universal">
       <div class="menu-lateral">
-        <button id="todos" class="botones-categorias font-weight-bold">TODOS LOS PRODUCTOS</button>
-        <ul class="ul-menu">
+        <button id="todos" class="botones-categorias font-weight-bold"><H5>TODOS LOS PRODUCTOS</H5></button>
+
+        <div class="div-categorias">
+        <h6 class="font-bold">PRENDAS</h6>
+        <ul>
             <li><button id="zapatillas"  class="botones-categorias">Zapatillas</button></li>
             <li><button id="remeras"  class="botones-categorias">Remeras</button></li>
             <li><button id="buzos"  class="botones-categorias">Buzos</button></li>
             <li><button id="bermudas"  class="botones-categorias">Bermudas</button></li>
             <li><button id="overalls"  class="botones-categorias">Overhalls</button></li>
         </ul>
-      </div>
+        </div>
+
+        <div class="div-categorias">
+        <h6 class="font-bold">GÉNERO</h6>
+        <ul>
+            <li><button class="botones-categorias" id="unisex">Unisex</button></li>
+            <li><button class="botones-categorias" id="hombre">Hombre</button></li>
+            <li><button class="botones-categorias" id="mujer">Mujer</button></li>
+        </ul>
+        </div>
+
+        <div class="div-categorias">
+        <h6 class="font-bold">PRECIO</h6>
+        <ul>
+            <li><button class="botones-precio" id="diez-mil">Hasta $10.000</button></li>
+            <li><button class="botones-precio" id="veinte-mil">Hasta $20.000</button></li>
+            <li><button class="botones-precio" id="treinta-mil">Hasta $30.000</button></li>
+        </ul>
+        </div>
+    </div>
       
       <div id="contenedor-productos" class="contenedor-productos-class" data-aos="fade-right">
         <!-- COMPLETADO MEDIANTE JS -->

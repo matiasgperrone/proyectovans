@@ -1,13 +1,19 @@
 .footer{
     background-color: black;
     height: 100px;
-    &__texto{
-        color: white;
-        text-align: center;
-    }
-    &__img{
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
 }
+
+.footer__texto{
+    color: grayscale($color: #6a6a6a);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.footer__img{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    }
+
+
+

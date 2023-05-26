@@ -15,11 +15,12 @@ fetch("./js/productos.json")
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".botones-categorias");
+const botonesPrecio = document.querySelectorAll(".botones-precio");
 let botonesAgregar = document.querySelectorAll(".botones-agregar");
 const numeroCarrito = document.querySelector("#numero-carrito");
 
 
-// FUNCION PARA CARGA DE PRODUCTOS EN EL INDEX
+// FUNCION PARA CARGA DE PRODUCTOS EN EL INDEX.
 
 function cargarProductos(productosElegidos) {
 
@@ -49,22 +50,39 @@ function cargarProductos(productosElegidos) {
 
 
 
-
+//*********VER ESTA FUNCION***** */
 // FILTROS PARA MOSTRAR CIERTOS PRODUCTOS DEPENDIENDO CATEGORIA
 
 botonesCategorias.forEach(boton => {
 	boton.addEventListener("click", (e) => {
 
-		if(e.currentTarget.id != "todos"){
+		if(e.currentTarget.id === "zapatillas" || e.currentTarget.id === "remeras" || e.currentTarget.id === "bermudas" || e.currentTarget.id === "buzos" || e.currentTarget.id === "overalls" ){
 			const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
 			cargarProductos(productosBoton);
-		} else {
+		} else if(e.currentTarget.id === "hombre" || e.currentTarget.id === "mujer" || e.currentTarget.id === "unisex") {
+			const productosBotonGenero = productos.filter(producto => producto.categoria.genero === e.currentTarget.id);
+			cargarProductos(productosBotonGenero);
+		}
+		else if(e.currentTarget.id === "todos"){
 			cargarProductos(productos);
 		}
-
-
 	})
+})
 
+botonesPrecio.forEach(botonPrecio => {
+	botonPrecio.addEventListener("click", (e) => {
+
+		if(e.currentTarget.id === "diez-mil"){
+			const diezMil = productos.filter(producto => producto.precio < 10000);
+			cargarProductos(diezMil);
+		} else if (e.currentTarget.id === "veinte-mil"){
+			const veinteMil = productos.filter(producto => producto.precio < 20000);
+			cargarProductos(veinteMil);
+		} else if (e.currentTarget.id === "treinta-mil"){
+			const treintaMil = productos.filter(producto => producto.precio < 30000);
+			cargarProductos(treintaMil);
+		} 
+})
 })
 
 // AGREGAR LOS PRODUCTOS AL CARRITO

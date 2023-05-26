@@ -5,7 +5,8 @@
 		"imagen": "../img/zapatillas/zapatillas01.jpg",
 		"categoria": {
 			"nombre": "Zapatillas",
-			"id": "zapatillas"
+			"id": "zapatillas",
+			"genero": "unisex"
 				},
 		"precio": 26600
 	},
@@ -15,7 +16,8 @@
 		"imagen": "../img/zapatillas/zapatillas02.jpg",
 		"categoria": {
 			"nombre": "Zapatillas",
-			"id": "zapatillas"
+			"id": "zapatillas",
+			"genero": "unisex"
 				},
 		"precio": 26600
 	},
@@ -25,7 +27,8 @@
 		"imagen": "../img/zapatillas/zapatillas03.jpg",
 		"categoria": {
 			"nombre": "Zapatillas",
-			"id": "zapatillas"
+			"id": "zapatillas",
+			"genero": "unisex"
 				},
 		"precio": 20300
 	},
@@ -35,7 +38,8 @@
 		"imagen": "../img/zapatillas/zapatillas04.jpg",
 		"categoria": {
 			"nombre": "Zapatillas",
-			"id": "zapatillas"
+			"id": "zapatillas",
+			"genero": "mujer"
 				},
 		"precio": 16000
 	},
@@ -45,7 +49,8 @@
 		"imagen": "../img/zapatillas/zapatillas05.jpg",
 		"categoria": {
 			"nombre": "Zapatillas",
-			"id": "zapatillas"
+			"id": "zapatillas",
+			"genero": "mujer"
 				},
 		"precio": 16000
 	},
@@ -55,7 +60,8 @@
 		"imagen": "../img/zapatillas/zapatillas06.jpg",
 		"categoria": {
 			"nombre": "Zapatillas",
-			"id": "zapatillas"
+			"id": "zapatillas",
+			"genero": "unisex"
 				},
 		"precio": 26600
 	},
@@ -65,7 +71,8 @@
 		"imagen": "../img/Remeras/remera01.jpg",
 		"categoria": {
 			"nombre": "Remeras",
-			"id": "remeras"
+			"id": "remeras",
+			"genero": "hombre"
 				},
 		"precio": 9300
 	},
@@ -75,7 +82,8 @@
 		"imagen": "../img/Remeras/remera02.jpg",
 		"categoria": {
 			"nombre": "Remeras",
-			"id": "remeras"
+			"id": "remeras",
+			"genero": "hombre"
 				},
 		"precio": 9300
 	},
@@ -85,7 +93,8 @@
 		"imagen": "../img/Remeras/remera03.jpg",
 		"categoria": {
 			"nombre": "Remeras",
-			"id": "remeras"
+			"id": "remeras",
+			"genero": "hombre"
 				},
 		"precio": 7800
 	},
@@ -95,7 +104,8 @@
 		"imagen": "../img/bermudas/bermuda01.jpg",
 		"categoria": {
 			"nombre": "Bermudas",
-			"id": "bermudas"
+			"id": "bermudas",
+			"genero": "hombre"
 				},
 		"precio": 15200
 	},
@@ -105,7 +115,8 @@
 		"imagen": "../img/bermudas/bermuda02.jpg",
 		"categoria": {
 			"nombre": "Bermudas",
-			"id": "bermudas"
+			"id": "bermudas",
+			"genero": "hombre"
 				},
 		"precio": 15200
 	},
@@ -115,7 +126,8 @@
 		"imagen": "../img/buzos/buzo01.jpg",
 		"categoria": {
 			"nombre": "Buzos",
-			"id": "buzos"
+			"id": "buzos",
+			"genero": "unisex"
 				},
 		"precio": 25200
 	},
@@ -125,7 +137,8 @@
 		"imagen": "../img/buzos/buzo02.jpg",
 		"categoria": {
 			"nombre": "Buzos",
-			"id": "buzos"
+			"id": "buzos",
+			"genero": "mujer"
 				},
 		"precio": 21200
 	},
@@ -135,7 +148,8 @@
 		"imagen": "../img/buzos/buzo03.jpg",
 		"categoria": {
 			"nombre": "Buzos",
-			"id": "buzos"
+			"id": "buzos",
+			"genero": "unisex"
 				},
 		"precio": 23800
 	},
@@ -145,7 +159,8 @@
 		"imagen": "../img/overalls/overalls.jpg",
 		"categoria": {
 			"nombre": "Overalls",
-			"id": "overalls"
+			"id": "overalls",
+			"genero": "mujer"
 				},
 		"precio": 39900
 	}
