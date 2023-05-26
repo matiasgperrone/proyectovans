@@ -4,14 +4,6 @@
     gap: 16px;
 }
 
-.botones-menu-principal{
-    transition: transform .5s;
-}
-
-.botones-menu-principal:hover{
-    transform: scale(1.1);
-}
-
 .contenedor-productos-class{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -32,6 +24,7 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
 
 .botones-categorias, .botones-precio{
     border: 0;
